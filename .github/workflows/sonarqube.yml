@@ -30,11 +30,3 @@ jobs:
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
-
-      - name: Check SonarQube analysis result
-        run: |
-          if [[ "${{ steps.sonarqube-scan.outputs.status }}" == "success" ]]; then
-            echo "SonarQube analysis succeeded."
-          else
-            echo "SonarQube analysis found issues."
-          fi
