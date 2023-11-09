@@ -21,7 +21,7 @@ app.get('/api', (req, res) => {
 //ruta de la api
 app.get('/sonar', (req, res) => {
     // Error deliberado: falta de manejo de error
-    // throw new Error('Simulated error');
+    throw new Error('Simulated error');
     res.json(
         {
             message: "SonarQube_test",
