@@ -24,7 +24,7 @@ app.get('/sonar', (req, res) => {
     // throw new Error('Simulated error');
     res.json(
         {
-            message: "SonarQube",
+            message: "SonarQube_test",
         }
     );
 })
